@@ -1,0 +1,26 @@
+body{
+    background-color: lime;
+}
+header{
+    background-color: red;
+    padding-left: 60px;
+    padding-bottom: 40px;
+    padding-right: 60px;
+}
+.bouton{
+    float: right;
+}
+.image{
+    position:relative;
+    width: 90%;
+    height: 500px;
+    background-color: lightblue;
+    margin-left: 60px;
+    text-align: center;
+    
+.text{
+    background-color: purple;
+}
+div>h1{
+    background-color: red;
+}
