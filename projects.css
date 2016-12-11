@@ -1,0 +1,127 @@
+body{
+    
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 100%
+}
+.navbtn{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+header{
+    padding-bottom: 40px;
+    display: none !important;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.bouton{
+    margin-bottom: 20px;
+    float: right;
+}
+.image{
+    position:relative;
+    width: 90%;
+    height: 500px;
+    background-image:url("http://t1.gstatic.com/images?q=tbn:ANd9GcTDo350PMdG37tdMJhycDaIIi3SVJZySLxvfPtSfUlxd6sM5R7yW1YIVQ4");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 60px;
+    text-align: center;
+}
+h2{
+    font-size: 120px;
+}
+p{
+    font-size: 35px;
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.ptit{
+    font-size: 20px;
+}
+#btnHover{
+  height: auto;
+  font-size: 25px;
+  position: absolute;
+  left: 45%;
+  top: 75%;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  z-index: 20;
+
+}
+
+#btnHover:hover{
+   background-color:whitesmoke;
+   color:white;
+   transition-duration: 0.5s;
+}
+#Visible{    
+    position: absolute;
+}
+
+#panel{
+    background-color: #fff;
+    height: 1000px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    bottom: 540px;
+
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+#panel > ul {
+    padding-top: 200px;
+}
+.text{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 480px;
+
+}
+section{
+  color: whitesmoke;
+  height: 500px;
+  margin-top: 70px !important;
+  text-align: center;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+section>div>h1{
+  padding-top: 150px;
+  font-size: 50px;
+}
+
+section >div> h3{
+  margin: 50px;
+}
+
+.post1{
+   width: 60%;
+   height: 200px;
+   margin-top: 10px;
+   background-color: brown;
+   display: flex;
+   flex-direction: column;
+}
+.post2{
+   width: 40%;
+   margin-top: 10px;
+   height: 200px;
+   background-color: gold;
+   display: flex;
+   flex-direction: column;
+}

@@ -1,36 +1,87 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <title>Projects</title>
+        <title>Project</title>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="reset.css">
-        <link rel="stylesheet" type="text/css" href="main.css"> 
+        <link rel="stylesheet" type="text/css" href="projects.css"> 
     </head>
     <body>
-        <header>
-            <nav>
-            <div class >
-            <img alt="logo">
+       
             
-            <a class="bouton" href="">&#9776;</a>
+            <div class="navbtn">
+                <a href="./index.html"><img alt="logo" src="http://ashenke.free.fr/favicon.png" width="30" height="30"></a>
+            
+                <a>
+                    <img id="Visible" onclick="navOpacity1()" alt="menu">
+                    <img id="navNone" onclick="navOpacity0()" alt="menu">
+                </a>
             </div>
-                <ul>
+        <section class="conteneur">
+            <article class="post1">
+                <h3>IMAGE NUM1</h3>
+                <p>Tu comprends, premièrement, c'est un très, très gros travail puisque the final conclusion of the spirit is perfection</p>
+            </article>
+            <article class="post2">
+                <h3>IMAGE NUM2</h3>
+                <p>Tu comprends, premièrement, c'est un très, très gros travail puisque the final conclusion of the spirit is perfection</p>
+            </article>
+            <article class="post1">
+                <h3>IMAGE NUM3</h3>
+                <p>Tu comprends, premièrement, c'est un très, très gros travail puisque the final conclusion of the spirit is perfection</p>
+            </article>
+            <article class="post2">
+                <h3>IMAGE NUM4</h3>
+                <p>Tu comprends, premièrement, c'est un très, très gros travail puisque the final conclusion of the spirit is perfection</p>
+            </article> 
+            <article class="post1">
+                <h3>IMAGE NUM5</h3>
+                <p>Tu comprends, premièrement, c'est un très, très gros travail puisque the final conclusion of the spirit is perfection</p>
+            </article>
+            <article class="post2">
+                <h3>IMAGE NUM6</h3>
+                <p>Tu comprends, premièrement, c'est un très, très gros travail puisque the final conclusion of the spirit is perfection</p>
+            </article>
+            <article class="post1">
+                <h3>IMAGE7</h3>
+                <p>Tu comprends, premièrement, c'est un très, très gros travail puisque the final conclusion of the spirit is perfection</p>
+            </article>
+        </section>
+        
+        <nav id="panel">
+                
+                <ul class="display">
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./projects.html">Project</a></li>
                 </ul>
-            </nav>
-        </header>
-        <div class="image">
-        <img alt="img">
-        <div class="text">
-        <h2>Sport</h2>
-        <h3>Foot</h3>
-        <p>Primi igitur omnium statuuntur Epigonus et Eusebius ob nominum gentilitatem </p>
-        </div>
-        </div>
+                </nav>
+        
         <footer>
+            <div class="text">
             
+                <p class="ptit">Primi igitur omnium statuuntur Epigonus et Eusebius ob</p>
+       
+                <p><img alt="logo" src="http://ashenke.free.fr/favicon.png" width="30" height="30"><img alt="logo" src="http://ashenke.free.fr/favicon.png" width="30" height="30"></p>
+            </div>
         </footer>
+        <script>
+            function navOpacity1() {
+               if((document.getElementById("panel") !== (document.getElementById("panel").style.opacity = "0")))
+                  document.getElementById("panel").style.opacity = "1";
+                  document.getElementById("Visible").style.display = "none";
+                  document.getElementById("btnHover").style.zIndex  = "0";
+            }
+
+            function navOpacity0() {
+                if((document.getElementById("panel") === (document.getElementById("panel").style.opacity = "0")))
+                  document.getElementById("panel").style.opacity = "1";
+                  document.getElementById("Visible").style.display = "block";
+                  document.getElementById("btnHover").style.zIndex  = "20";
+
+                }
+            
+
+        </script>
         
     </body>
 </html>
